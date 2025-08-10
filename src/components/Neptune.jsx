@@ -1,9 +1,12 @@
 import * as three from 'three';
+import { useTexture } from '@react-three/drei';
 import {useFrame} from '@react-three/fiber';
 import {useRef} from 'react';
 
-export default function Jupiter(){
+export default function Neptune(){
     const meshRef=useRef();
+    // Load texture(s) declaratively
+    const jupiterTexture = useTexture('/public/neptunemap.jpg');
     //animate rotation
     useFrame(()=>{
         //state: R3F render state
@@ -27,7 +30,9 @@ export default function Jupiter(){
     //return the mesh (material+geometry)
     return(
         
-              <mesh ref={meshRef} geometry={geometry} material={material} />
+              <mesh ref={meshRef} geometry={geometry} material={material} >
+                <meshPhongMaterial map={jupiterTexture} bumpMap={jupiterTexture} bumpScale={0.05}/>
+              </mesh>
        
     )
 }
