@@ -1,6 +1,18 @@
 import * as three from 'three';
+import {useFrame} from '@react-three/fiber';
+import {useRef} from 'react';
 
 export default function Jupiter(){
+    const meshRef=useRef();
+    //animate rotation
+    useFrame(()=>{
+        //state: R3F render state
+        //delta : time in seconds since last frame
+        if (meshRef.current) {
+            meshRef.current.rotation.y += 0.01; // adjust speed here
+          } //slow rotation
+    })
+
     //load the geometry
     let radius=10;
     let widthSegments=64;
@@ -11,16 +23,11 @@ export default function Jupiter(){
         heightSegments
     );
     //load the material
-    const material=new three.MeshBasicMaterial({color: '#D3D3D3' });
-    //make the mesh=material+geometry
-    const sphere=new three.Mesh(geometry,material);
-
-    //add scene
-    const scene=new three.Scene();
-    scene.add(sphere);
+    const material=new three.MeshStandardMaterial({color: '#D3D3D3' });
+    //return the mesh (material+geometry)
     return(
-        <div>
-
-        </div>
+        
+              <mesh ref={meshRef} geometry={geometry} material={material} />
+       
     )
 }
