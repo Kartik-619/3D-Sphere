@@ -82,8 +82,8 @@ This project helped me dive deep into:
 - [ ] Create a **planet selector UI**
 - [ ] Add **particle systems** (auroras, comet tails)
 
----
-🚧 License
+--- <hr> 
+<h3>🚧 License</h3> <br>
 This project is open source and available under the UnLicense License.
 
 <br>
