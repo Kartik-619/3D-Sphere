@@ -83,7 +83,10 @@ This project helped me dive deep into:
 - [ ] Add **particle systems** (auroras, comet tails)
 
 ---
+🚧 License
+This project is open source and available under the UnLicense License.
 
+<br>
 
 🌟 Acknowledgments
 NASA Visible Earth – For providing high-resolution planetary textures
