@@ -87,12 +87,13 @@ This project helped me dive deep into:
 This project is open source and available under the UnLicense License.
 
 <br>
-
-🌟 Acknowledgments
-NASA Visible Earth – For providing high-resolution planetary textures
-Three.js – For making 3D on the web accessible
-Paul Henschel (drei) – For @react-three/drei utilities
+<br>
 <hr>
+<h3>>🌟 Acknowledgments</h3 <br>
+NASA Visible Earth – For providing high-resolution planetary textures
+<br>Three.js – For making 3D on the web accessible
+<br>Paul Henschel (drei) – For @react-three/drei utilities
+<br><hr>
 <br>
  <h3>💻 Feedback & Contributions</h3>
 Have a suggestion or found a bug?
