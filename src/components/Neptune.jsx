@@ -6,7 +6,7 @@ import {useRef} from 'react';
 export default function Neptune(){
     const meshRef=useRef();
     // Load texture(s) declaratively
-    const jupiterTexture = useTexture('/public/neptunemap.jpg');
+    const jupiterTexture = useTexture('/neptunemap.jpg');
     //animate rotation
     useFrame(()=>{
         //state: R3F render state
