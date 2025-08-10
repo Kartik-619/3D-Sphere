@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Jupiter from './components/Jupiter'
+import Jupiter from './components/Neptune'
 import Canvas_3 from './components/Canvas'
 
 function App() {
