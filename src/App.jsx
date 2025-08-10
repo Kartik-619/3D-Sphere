@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import Jupiter from './components/Jupiter'
 
 function App() {
 
   return (
 
-      <div></div>
+      <div>
+        <Jupiter/>
+      </div>
 
   )
 }
