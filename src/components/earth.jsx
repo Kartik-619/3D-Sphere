@@ -3,10 +3,10 @@ import { useTexture } from '@react-three/drei';
 import {useFrame} from '@react-three/fiber';
 import {useRef} from 'react';
 
-export default function Neptune(){
+export default function Earth(){
     const meshRef=useRef();
     // Load texture(s) declaratively
-    const neptuneTexture = useTexture('/neptunemap.jpg');
+    const earthTexture = useTexture('/earth.jpg');
     //animate rotation
     useFrame(()=>{
         //state: R3F render state
@@ -17,7 +17,7 @@ export default function Neptune(){
     })
 
     //load the geometry
-    let radius=10;
+    let radius=6;
     let widthSegments=64;
     let heightSegments=64;
     const geometry=new three.SphereGeometry(
@@ -31,7 +31,7 @@ export default function Neptune(){
     return(
         
               <mesh ref={meshRef} geometry={geometry} material={material} >
-                <meshPhongMaterial map={neptuneTexture} bumpMap={neptuneTexture} bumpScale={0.05}/>
+                <meshPhongMaterial map={earthTexture} bumpMap={earthTexture} bumpScale={0.05}/>
               </mesh>
        
     )
