@@ -68,12 +68,14 @@ This project helped me dive deep into:
 ### ✅ Completed
 - [x] Earth with texture, bump map, and rotation
 - [x] Jupiter with realistic cloud bands
+- [x] Saturn with its ring
+- [x] Mars and Neptune
 - [x] Camera controls for exploration
 - [x] Responsive canvas and smooth animation
 - [x] Modular `Planet` component system
 
 ### 🚀 Future Enhancements
-- [ ] Add **Mars, Saturn, and the Sun**
+- [ ] Add **Venus,Uranus,Mercury the Sun**
 - [ ] Simulate **orbital motion** using physics
 - [ ] Launch a **rocket from Earth** with projectile motion
 - [ ] Show **day/night cycle** with dynamic lighting
