@@ -4,6 +4,7 @@ import Neptune from './Neptune';
 import Earth from './earth';
 import Saturn from './Saturn';
 import Mars from './mars';
+import Jupiter from './jupiter';
 
 export default function Canvas_3(){
     return(
@@ -11,8 +12,7 @@ export default function Canvas_3(){
             
             <Canvas camera={{ position: [0, 0, 30] }}>
                 
-            <Mars/>
-                
+                <Jupiter/>
                {/*<Neptune/>*/}
                 <ambientLight intensity={0.8}/>
                 <directionalLight position={[5,5,5]} intensity={1}/>
