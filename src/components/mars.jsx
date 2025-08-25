@@ -3,23 +3,21 @@ import { useTexture } from '@react-three/drei';
 import {useFrame} from '@react-three/fiber';
 import {useRef} from 'react';
 
-export default function Neptune(){
+export default function Mars(){
     const meshRef=useRef();
     // Load texture(s) declaratively
-
-    const neptuneTexture = useTexture('/neptunemap.jpg');
-
+    const marsTexture = useTexture('/mars.jpg');
     //animate rotation
     useFrame(()=>{
         //state: R3F render state
         //delta : time in seconds since last frame
         if (meshRef.current) {
-            meshRef.current.rotation.y += 0.015; // adjust speed here
+            meshRef.current.rotation.y += 0.0205; // adjust speed here
           } //slow rotation
     })
 
     //load the geometry
-    let radius=10;
+    let radius=5;
     let widthSegments=64;
     let heightSegments=64;
     const geometry=new three.SphereGeometry(
@@ -33,7 +31,7 @@ export default function Neptune(){
     return(
         
               <mesh ref={meshRef} geometry={geometry} material={material} >
-                <meshPhongMaterial map={neptuneTexture} bumpMap={neptuneTexture} bumpScale={0.05}/>
+                <meshPhongMaterial map={marsTexture} bumpMap={marsTexture} bumpScale={0.05}/>
               </mesh>
        
     )
